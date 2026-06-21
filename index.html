@@ -1,71 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DiabeticModels — Open diabetes models, shown and hosted. Every build proves its math.</title>
+<title>DiabeticModels — open diabetes models, shown and hosted. Every build proves its math.</title>
 <meta name="description" content="DiabeticModels builds small, open diabetes-specialist models in the open: every model shows its cited corpus, its recipe, its beat-base eval, and its receipt. No black-box. Models flow down to your devices; your data never flows up.">
 <link rel="canonical" href="https://diabeticmodels.com/">
-<meta property="og:title" content="DiabeticModels — open diabetes models, shown and hosted">
-<meta property="og:description" content="Every build proves its math: cited corpus, recipe, beat-base eval, receipt. Powered by OpenDiabetic.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0B0F14">
+<meta name="author" content="OpenDiabetic Foundation">
+<meta name="keywords" content="open diabetes models, diabetic foot care model, on-device AI, beat-base eval, cited corpus, sovereign AI health, privacy-first diabetes, model receipts">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DiabeticModels">
 <meta property="og:url" content="https://diabeticmodels.com/">
-<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="DiabeticModels — open diabetes models, shown and hosted">
+<meta property="og:description" content="Every build proves its math: cited corpus, recipe, beat-base eval, receipt. No black-box. Powered by OpenDiabetic.">
+<meta property="og:image" content="https://diabeticmodels.com/og.png">
+<meta property="og:image:alt" content="DiabeticModels — open diabetes models, shown and hosted">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@opendiabetics">
+<meta name="twitter:title" content="DiabeticModels — open diabetes models, shown and hosted">
+<meta name="twitter:description" content="Every build proves its math: cited corpus, recipe, beat-base eval, receipt. No black-box. Powered by OpenDiabetic.">
+<meta name="twitter:image" content="https://diabeticmodels.com/og.png">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org","@type":"Organization","name":"DiabeticModels",
-  "url":"https://diabeticmodels.com",
-  "description":"Small, open diabetes-specialist models built in the open — every model shows its cited corpus, recipe, beat-base eval, and receipt.",
-  "parentOrganization":{"@type":"Organization","name":"OpenDiabetic","url":"https://opendiabetic.com"},
-  "knowsAbout":["open language models","diabetic foot care","on-device AI","model evaluation"]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://diabeticmodels.com/#org",
+      "name": "DiabeticModels",
+      "url": "https://diabeticmodels.com",
+      "description": "Small, open diabetes-specialist models built in the open — every model shows its cited corpus, recipe, beat-base eval, and receipt. Models organize and explain; they do not diagnose.",
+      "slogan": "Open diabetes models — shown and hosted. Every build proves its math.",
+      "email": "build@opendiabetic.com",
+      "telephone": "+1-561-532-7120",
+      "address": { "@type": "PostalAddress", "addressLocality": "Jupiter", "addressRegion": "FL", "addressCountry": "US" },
+      "knowsAbout": ["open language models", "diabetic foot care", "on-device AI", "model evaluation", "beat-base evaluation", "cited corpus"],
+      "sameAs": ["https://opendiabetic.com", "https://diabeticdocs.com", "https://diabeticnode.com", "https://diabeticdatasets.com", "https://diabetictruth.org", "https://diabeticledger.com", "https://diabeticdonation.com", "https://localdiabetic.com", "https://x.com/opendiabetics", "https://github.com/SudoSuOps"],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Swarm and Bee LLC",
+        "legalName": "Swarm and Bee LLC",
+        "alternateName": "Swarm & Bee AI",
+        "address": { "@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US" },
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "SAM UEI", "value": "L9EXVH9L9VU6" },
+          { "@type": "PropertyValue", "propertyID": "CAGE", "value": "20YM3" },
+          { "@type": "PropertyValue", "propertyID": "DUNS", "value": "138652395" }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://diabeticmodels.com/#website",
+      "url": "https://diabeticmodels.com",
+      "name": "DiabeticModels",
+      "description": "The model-build-and-host wing of OpenDiabetic.",
+      "publisher": { "@id": "https://diabeticmodels.com/#org" },
+      "inLanguage": "en-US"
+    }
+  ]
 }
 </script>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<header>
-  <h1>🐝 DiabeticModels</h1>
-  <p class="tag">Open diabetes models — shown and hosted. Every build proves its math.</p>
+
+<header class="nav">
+  <a class="brand" href="/"><span class="bee" aria-hidden="true">🐝</span><span>Diabetic<b>Models</b></span></a>
+  <nav>
+    <a href="#board">Build board</a>
+    <a href="#prove">How we prove a model</a>
+    <a href="https://diabetictruth.org">The facts</a>
+    <a class="btn ghost" href="https://opendiabetic.com">OpenDiabetic →</a>
+  </nav>
 </header>
 
-<div class="promise">
-  <p><b>No black-box.</b> Every model here ships with four things you can check yourself: its <b>cited corpus</b>, its <b>recipe</b>, its <b>beat-base evaluation</b>, and its <b>receipt</b>. A model isn't "proven" until it beats its base model on a held-out test — and we publish that math, win or lose.</p>
-  <p style="margin-bottom:0">Models flow <b>down</b> to your devices and the on-device helpers. Your private health data never flows up. The facts behind every model are published openly at <a href="https://diabetictruth.org">DiabeticTruth</a>.</p>
-</div>
-
-<h2>The build board</h2>
-
-<div class="model">
-  <h3>LocalDiabetic Foot-Care Specialist <span class="status s-build">🔨 IN BUILD</span></h3>
-  <p>A small open model that organizes and explains diabetic foot care — grounded in cited guidance, tuned to <em>never diagnose</em>. Destined to run on the LocalDiabetic edge box, on your own hardware.</p>
-  <div class="pipe">
-    <span class="step done">1 · Corpus canary ✓</span>
-    <span class="step now">2 · Scale corpus</span>
-    <span class="step">3 · Training pairs</span>
-    <span class="step">4 · Cook</span>
-    <span class="step">5 · Beat base or kill</span>
-    <span class="step">6 · Host</span>
+<section class="hero">
+  <div class="wrap">
+    <h1><span class="b">Open diabetes models</span><br>shown and hosted.</h1>
+    <p class="lede">Every build proves its math. Each model ships with its <b>cited corpus</b>, its
+      <b>recipe</b>, its <b>beat-base evaluation</b>, and its <b>receipt</b> — so you never have to
+      take our word for it.</p>
+    <div class="cta">
+      <a class="btn" href="#board">See the build board</a>
+      <a class="btn ghost" href="#prove">How we prove a model →</a>
+    </div>
+    <p class="micro">Models flow down · Receipts flow up · Your health data never flows up</p>
   </div>
-  <p class="src"><b>Honest status:</b> not yet cooked. The cited fact corpus is staged (20 facts from NIDDK &amp; IWGDF 2023, every one sourced). <b>No weights exist yet.</b> When this model beats its base on a held-out foot-care eval, the receipt and the download land right here — not before.</p>
-  <p><span class="btn disabled">Download — pending beat-base ✕</span> &nbsp; <a href="https://diabetictruth.org/foot-care-daily">See the facts it learns →</a></p>
-</div>
+</section>
 
-<div class="model">
-  <h3>Neuropathy &amp; "Know Your Numbers" Specialists <span class="status s-planned">PLANNED</span></h3>
-  <p>The next builds, once the foot-care cook proves the recipe. Same spine: cited corpus → cook → beat-base → host.</p>
-  <p class="src">Facts already published: <a href="https://diabetictruth.org/neuropathy">Neuropathy</a> · <a href="https://diabetictruth.org/know-your-numbers">A1C / targets</a>.</p>
-</div>
+<section class="section">
+  <div class="wrap">
+    <div class="promise">
+      <p><b>No black-box.</b> Every model here ships with four things you can check yourself: its
+        <b>cited corpus</b>, its <b>recipe</b>, its <b>beat-base evaluation</b>, and its <b>receipt</b>.
+        A model isn't "proven" until it beats its base model on a held-out test — and we publish that
+        math, win or lose.</p>
+      <p>Models flow <b>down</b> to your devices and the on-device helpers. Your private health data
+        never flows up. The facts behind every model are published openly at
+        <a href="https://diabetictruth.org">DiabeticTruth</a>. Models organize and explain —
+        they do not diagnose.</p>
+    </div>
+  </div>
+</section>
 
-<h2>How we prove a model</h2>
-<ol>
-  <li><b>Corpus, cited.</b> Every fact traces to an authoritative source. No source → not in the corpus.</li>
-  <li><b>Recipe, published.</b> Base model, data, and settings — reproducible.</li>
-  <li><b>Beat base or kill.</b> The tuned model must beat its base on a held-out, deterministic eval. If it doesn't, it doesn't ship — and we say so.</li>
-  <li><b>Receipt.</b> The eval result is recorded honestly, win or lose, in the open cook ledger.</li>
-  <li><b>Host.</b> Only then does the model go up for download and flow down to your devices.</li>
-</ol>
+<section id="board" class="section dark">
+  <div class="wrap">
+    <h2>The build board</h2>
+    <p class="sub">Honest status, in the open. A build only graduates to a download after it beats its
+      base on a held-out eval — not before.</p>
 
-<footer>
-  <p><strong>Why this way:</strong> "the AI trust-me-bro is over." A model you can't verify is a model you shouldn't trust. We show the corpus, the math, and the receipt so you never have to take our word for it.</p>
-  <p>Powered by <a href="https://opendiabetic.com">OpenDiabetic</a> · facts at <a href="https://diabetictruth.org">DiabeticTruth</a>.</p>
+    <div class="model">
+      <h3>LocalDiabetic Foot-Care Specialist <span class="status s-build">IN BUILD</span></h3>
+      <p>A small open model that organizes and explains diabetic foot care — grounded in cited guidance,
+        tuned to <em>never diagnose</em>. Destined to run on the LocalDiabetic edge box, on your own hardware.</p>
+      <div class="pipe">
+        <span class="step done">1 · Corpus canary ✓</span>
+        <span class="step now">2 · Scale corpus</span>
+        <span class="step">3 · Training pairs</span>
+        <span class="step">4 · Cook</span>
+        <span class="step">5 · Beat base or kill</span>
+        <span class="step">6 · Host</span>
+      </div>
+      <p class="src"><b>Honest status:</b> not yet cooked. The cited fact corpus is staged
+        (20 facts from NIDDK &amp; IWGDF 2023, every one sourced). <b>No weights exist yet.</b>
+        When this model beats its base on a held-out foot-care eval, the receipt and the download land
+        right here — not before.</p>
+      <p><span class="btn disabled">Download — pending beat-base ✕</span> &nbsp;
+        <a href="https://diabetictruth.org/foot-care-daily">See the facts it learns →</a></p>
+    </div>
+
+    <div class="model">
+      <h3>Neuropathy &amp; "Know Your Numbers" Specialists <span class="status s-planned">PLANNED</span></h3>
+      <p>The next builds, once the foot-care cook proves the recipe. Same spine: cited corpus → cook →
+        beat-base → host.</p>
+      <p class="src">Facts already published: <a href="https://diabetictruth.org/neuropathy">Neuropathy</a> ·
+        <a href="https://diabetictruth.org/know-your-numbers">A1C / targets</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prove" class="section">
+  <div class="wrap">
+    <h2>How we prove a model</h2>
+    <p class="sub">Five gates, every one published. No source → not in the corpus. No beat-base receipt
+      → no download.</p>
+    <ol class="prove">
+      <li><b>Corpus, cited.</b> Every fact traces to an authoritative source. No source → not in the corpus.</li>
+      <li><b>Recipe, published.</b> Base model, data, and settings — reproducible.</li>
+      <li><b>Beat base or kill.</b> The tuned model must beat its base on a held-out, deterministic eval.
+        If it doesn't, it doesn't ship — and we say so.</li>
+      <li><b>Receipt.</b> The eval result is recorded honestly, win or lose, in the open cook ledger.</li>
+      <li><b>Host.</b> Only then does the model go up for download and flow down to your devices.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap" style="max-width:820px;text-align:center">
+    <h2>Why this way</h2>
+    <p class="sub">"The AI trust-me-bro is over." A model you can't verify is a model you shouldn't trust.
+      We show the corpus, the math, and the receipt so you never have to take our word for it.</p>
+    <p class="micro"><a href="https://diabeticledger.com" style="color:var(--honey)">Verify the ledger →</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="brand-line"><span class="bee" aria-hidden="true">🐝</span> Diabetic<b>Models</b></p>
+    <p>The model-build-and-host wing of OpenDiabetic · Powered by
+      <a href="https://opendiabetic.com">OpenDiabetic</a> · facts at
+      <a href="https://diabetictruth.org">DiabeticTruth</a>.</p>
+    <p class="links">
+      <a href="https://opendiabetic.com">OpenDiabetic</a> ·
+      <a href="https://diabeticdocs.com">DiabeticDocs</a> ·
+      <a href="https://diabeticnode.com">DiabeticNode</a> ·
+      <a href="https://diabeticdatasets.com">DiabeticDatasets</a> ·
+      <a href="https://diabeticmodels.com">DiabeticModels</a> ·
+      <a href="https://diabetictruth.org">DiabeticTruth</a> ·
+      <a href="https://diabeticledger.com">DiabeticLedger</a> ·
+      <a href="https://diabeticdonation.com">DiabeticDonation</a> ·
+      <a href="https://localdiabetic.com">LocalDiabetic</a>
+    </p>
+    <p class="contact"><a href="mailto:build@opendiabetic.com">build@opendiabetic.com</a> ·
+      HQ Jupiter, Florida · <a href="tel:+15615327120">561.532.7120</a> ·
+      <a href="https://x.com/opendiabetics" rel="me">@opendiabetics</a></p>
+    <p class="motto">Show the corpus, the math, and the receipt. We are math and code.</p>
+    <p class="legal">Owned &amp; operated by <b>Swarm and Bee LLC</b> · DBA Swarm &amp; Bee AI · Florida<br>
+      UEI L9EXVH9L9VU6 · CAGE 20YM3 · D-U-N-S 138652395 · Registered &amp; active in SAM.gov<br>
+      &copy; 2026 DefendableOS · Proof of Execution.</p>
+  </div>
 </footer>
+
 </body>
 </html>
