@@ -1,0 +1,22 @@
+# DiabeticModels
+
+> Small, open diabetes-specialist language models, built in the open and hosted for download.
+> Every model ships with its cited corpus, its recipe, its beat-base evaluation, and its receipt.
+> A model is not called "proven" until it beats its base model on a held-out test — and that
+> math is published, win or lose. Models are educational/organizational tools; they do not diagnose.
+
+DiabeticModels is the model-build-and-host wing of OpenDiabetic. Models flow DOWN to people's
+own devices and on-device helpers; private health data never flows up. The facts the models
+learn are published openly and cited at DiabeticTruth (https://diabetictruth.org).
+
+Honesty rule: if a model has no weights and no beat-base receipt yet, it is labeled "in build,"
+not offered for download. We do not claim a proven model we cannot show.
+
+## Builds
+- LocalDiabetic Foot-Care Specialist (IN BUILD): grounded in a cited foot-care corpus (NIDDK,
+  IWGDF 2023), tuned to organize/explain and never diagnose. Not yet cooked; no weights yet.
+
+## About
+- Publisher: OpenDiabetic (https://opendiabetic.com)
+- Sister site (the facts): DiabeticTruth (https://diabetictruth.org)
+- Doctrine: cited corpus → published recipe → beat-base-or-kill → honest receipt → host.
